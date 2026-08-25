@@ -1,10 +1,5 @@
-# uv writes its own .gitignore inside .venv, but not these.
-__pycache__/
-*.py[cod]
-.pytest_cache/
-.ruff_cache/
-.ty_cache/
-
 # Helm packaging output.
 *.tgz
+# `helm dependency update` vendors subcharts here; they are resolved from
+# Chart.lock rather than committed.
 charts/*/charts/
