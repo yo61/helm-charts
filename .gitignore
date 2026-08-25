@@ -1,0 +1,10 @@
+# uv writes its own .gitignore inside .venv, but not these.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.ty_cache/
+
+# Helm packaging output.
+*.tgz
+charts/*/charts/
