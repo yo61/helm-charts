@@ -1,0 +1,5 @@
+# Helm packaging output.
+*.tgz
+# `helm dependency update` vendors subcharts here; they are resolved from
+# Chart.lock rather than committed.
+charts/*/charts/
